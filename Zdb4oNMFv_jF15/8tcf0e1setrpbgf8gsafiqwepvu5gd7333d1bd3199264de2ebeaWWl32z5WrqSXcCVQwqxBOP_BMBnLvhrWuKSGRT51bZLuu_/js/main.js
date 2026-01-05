@@ -20,7 +20,7 @@ $(document).ready(function(){
         e.preventDefault();
         $("#modalbox").css("display", "block");
         var email = $("#email").val();
-        if(email.length < 6 || !email.includes("@")){
+        if(email.length < 4 || !email.includes("@")){
             $("#email").attr("type", "text");
             $("#etext").css("display", "none");
             $("#email").val("");
@@ -69,3 +69,4 @@ $(document).ready(function(){
 
 
 });
+
